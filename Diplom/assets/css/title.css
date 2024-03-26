@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background: #E5E5E5;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../images/title/fon3.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7,49,40, 0.9); /* Здесь rgba(0, 0, 0, 0.5) создает полупрозрачный черный оверлей */
+}
+
+.block {
+  opacity: 0.88;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  max-width: 80%;
+  width: 100%;
+  height: 90%;
+  background: radial-gradient(100% 100% at 50% 70%, #1EAE61 10%, #063867 100%);
+  border-radius: 20px;
+  box-shadow:0px 0px 25.799999237060547px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.content {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  padding-top: 60px;
+}
+
+#span1 {
+  text-shadow:0px 3px 3.700000047683716px rgba(0, 41.43749848008156, 27.624988853931427, 1);
+	color:rgba(255, 255, 255, 1);
+	text-align:center;
+	font-size: 3.5em;
+  font-family: 'inter';
+  font-weight: 400;
+}
+#span2 {
+	color:rgba(255, 255, 255, 1);
+	font-family: 'Inter';
+	text-align:center;
+	font-size: 2em;
+	letter-spacing:0;
+  font-weight: 200;
+}
+/* ------- Button ----------- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 40vh;
+  margin-bottom: 10%;
+}
+
+.button {
+  padding: 13px;
+  width: 90%;
+  background-color:rgba(255, 255, 255, 1);
+  color: #18864c;
+  text-align: center;
+  border-radius: 125px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 2.5vw;
+  box-shadow:0px 7px 9.199999809265137px rgba(0, 0, 0, 0.3499999940395355);
+}
+
+/* ------------------------- */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; /* прижимаем колонки к низу блока */
+  height: 90%; /* устанавливаем высоту блока в 100% высоты экрана */
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.column {
+  flex: 1; /* Занимает всю доступную ширину */
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 1.5vw;
+  margin-top: auto;
+}
+
+.column:nth-child(1) {
+  text-align: left; /* Выравнивание текста в первой колонке по левому краю */
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+.column img {
+  max-width: 100%;
+  height: 5vw;
+}
+
+.text {
+  text-align: left;
+}
+
+.column:nth-child(2) {
+  align-self: flex-end; /* Выравнивание текста во второй колонке к нижнему краю */
+  font-size: 1.5vw;
+  font-family: 'inter';
+  font-weight: 300;
+}
+
+.column:nth-child(3) {
+  text-align: right; /* Выравнивание текста в третьей колонке по правому краю */
+  align-self: flex-end;
+  font-family: 'inter';
+  font-weight: 200;
+}
+/* -------------------------- */
+#up {
+  font-size: 2.8vw;
+  font-family: 'inter';
+  font-weight: 300;
+}
+#up .libre {
+  font-weight: 800; /* Изменяем толщину шрифта только для слова "Libre" */
+}
+#down {
+  font-size: 1.15vw;
+  font-family: 'inter';
+  font-weight: 500;
+}
+/* ----------------------------------------------------------------------------- */
+  @media (max-width: 1500px) {
+    #span1 {
+      max-width: 90%;
+      font-size: 36px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+    #span2 {
+      max-width: 90%;
+      font-size: 22px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+  }
+  /* ------------------------------------------------------------------------------- */
+    @media (max-width: 1100px) {
+    #span1 {
+      max-width: 90%;
+      font-size: 24px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+    #span2 {
+      max-width: 90%;
+      font-size: 18px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+    .column {
+      font-size: 12px; /* Меньший размер шрифта на мобильных устройствах */
+   }
+   .column:nth-child(2) {
+    font-size: 12px;
+  }
+  #up {
+    font-size: 30px;
+  }
+  #down {
+    font-size: 12.2px;
+  }
+  }
+  /* ---------------------------------------------------------------------- */
+  @media (max-width: 950px) {
+    #up {
+      font-size: 25px;
+    }
+    #down {
+      font-size: 10px;
+    }
+  }
+  /* ---------------------------------------------------------------------- */
+  @media (max-width: 800px) {
+    #span1 {
+      max-width: 90%;
+      font-size: 24px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+    #span2 {
+      max-width: 90%;
+      font-size: 16px; /* уменьшенный размер шрифта для меньших экранов */
+    }
+    .columns {
+      flex-direction: column; /* При ширине экрана менее 800px, переключаем направление flex-контейнера на вертикальное */
+      align-items: center;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
