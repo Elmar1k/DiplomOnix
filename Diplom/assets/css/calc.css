@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #236b29; /* Цвет фона как на главной странице */
+}
+
+.header {
+    background-color: #6cbf43;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.path {
+    margin: 10px 0; /* Отступ сверху и снизу */
+    padding-left: 20px; /* Отступ слева */
+    color: #8a8a8a; /* Цвет текста */
+}
+
+.path a {
+    text-decoration: none;
+    color: #fff; /* Цвет ссылок */
+    transition: color 0.3s; /* Добавление анимации для изменения цвета текста */
+}
+
+.path a:hover {
+    color: #98ffa1; /* Изменение цвета текста при наведении */
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.title {
+    flex: 10;
+    text-align: center;
+    font-size: 22px;
+}
+
+.instruction {
+    margin-top: 0;
+    line-height: 1.5;
+}
+.instruction h4 {
+    line-height: 0.8; /* Уменьшение расстояния между h4 и следующим за ним элементом */
+}
+.footer {
+    background-color: #6cbf43;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* ----------------------------------------Разделы---------------------------------------------- */
+.container {
+    max-width: 90%; /* Ширина основного контейнера */
+    margin: 20px auto; /* Центрируем контейнер */
+    padding: 20px;
+    background-color: #fff; /* Белый фон контейнера */
+    border-radius: 10px; /* Закругленные углы */
+    border: #00ff00 2px solid;
+}
+
+.section {
+    display: flex; /* Добавлено свойство flex для разделов */
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+    padding-top: 5%;
+    background-color: #ffffff;
+    margin-right: 20px; /* Отступ справа для разделов */
+    margin-top: -20px;
+    border-right: 2px solid #00ff00;
+}
+
+.sidebar p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #008d00;
+}
+
+/* Стили для красивых маркеров в списке */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding-left: 20px; /* Отступ для маркера */
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.sidebar ul li:before {
+    content: "\2022"; /* Устанавливаем кастомный маркер */
+    color: #6cbf43; /* Цвет маркера */
+    font-size: 1.2em; /* Размер маркера */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* --------------------------------------Примечание------------------------------------------------ */
+
+.note-table {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+}
+
+.note-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.note-header {
+    background-color: rgb(156, 156, 156);
+    color: #000000;
+}
+
+/* -------------------------------------------------------------------------------------- */
+.image-container {
+    text-align: center; /* Выравнивание содержимого по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.image-container img {
+    max-width: 70%; /* Максимальная ширина изображения равна ширине родительского контейнера */
+    height: auto; /* Автоматическое определение высоты */
+}
+figcaption {
+    text-align: center; /* Центрируем текст подписи */
+    margin-top: 10px; /* Отступ сверху от изображения */
+    font-style: italic; /* Курсивное начертание */
+    color: #666; /* Цвет текста */
+  }
+/* ---------------------------------------Список----------------------------------------------- */
+.menu-list {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+  }
+  
+  .menu-list b {
+    font-weight: bold; /* Делаем текст внутри тега <b> жирным */
+  }
+  
+  .menu-list i {
+    font-style: italic; /* Делаем текст внутри тега <i> курсивом */
+  }
+/* ---------------------------------------стрелка----------------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #f00; /* Цвет фона стрелки */
+    border-radius: 50%; /* Делаем круглую форму */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.scroll-to-top img {
+    width: 30px; /* Размер изображения стрелки */
+    height: auto;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff0; /* Изменяем цвет фона при наведении */
+}
